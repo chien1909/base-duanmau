@@ -5,19 +5,11 @@ class homeController
 {
     public function home()
     {
-        include './views/user/header_link.php';
-        include_once './views/user/header.php';
-        require_once './views/user/home.php';
-        include_once './views/user/footter.php';
-        include './views/user/footter_link.php';
-    }
-}
-class adminController
-{
-    public function admin()
-    {
-
-        require_once './views/user/admin.php';
+        include '../Front-end/view/user/header_link.php';
+        include_once '../Front-end/view/user/header.php';
+        require_once '../Front-end/view/user/home.php';
+        include_once '../Front-end/view/user/footter.php';
+        include '../Front-end/view/user/footter_link.php';
     }
 }
 //San pham
@@ -25,20 +17,21 @@ class productController
 {
     public function product()
     {
-        include './views/user/header_link.php';
-        include_once './views/user/header.php';
-        require_once './views/user/product.php';
-        include_once './views/user/footter.php';
-        include './views/user/footter_link.php';
+        include '../Front-end/view/user/header_link.php';
+        include_once '../Front-end/view/user/header.php';
+        require_once '../Front-end/view/user/product.php';
+        include_once '../Front-end/view/user/footter.php';
+        include '../Front-end/view/user/footter_link.php';
     }
+    
 
     public function product_detail()
     {
-        include './views/user/header_link.php';
-        include_once './views/user/header.php';
-        require_once './views/user/product_detail.php';
-        include_once './views/user/footter.php';
-        include './views/user/footter_link.php';
+        include '../Front-end/view/user/header_link.php';
+        include_once '../Front-end/view/user/header.php';
+        require_once '../Front-end/view/user/product_detail.php';
+        include_once '../Front-end/view/user/footter.php';
+        include '../Front-end/view/user/footter_link.php';
     }
 }
 
@@ -47,20 +40,20 @@ class newsController
 {
     public function news()
     {
-        include './views/user/header_link.php';
-        include_once './views/user/header.php';
-        require_once './views/user/news.php';
-        include_once './views/user/footter.php';
-        include './views/user/footter_link.php';
+        include '../Front-end/view/user/header_link.php';
+        include_once '../Front-end/view/user/header.php';
+        require_once '../Front-end/view/user/news.php';
+        include_once '../Front-end/view/user/footter.php';
+        include '../Front-end/view/user/footter_link.php';
     }
 
     public function new_detail()
     {
-        include './views/user/header_link.php';
-        include_once './views/user/header.php';
-        require_once './views/user/new_detail.php';
-        include_once './views/user/footter.php';
-        include './views/user/footter_link.php';
+        include '../Front-end/view/user/header_link.php';
+        include_once '../Front-end/view/user/header.php';
+        require_once '../Front-end/view/user/new_detail.php';
+        include_once '../Front-end/view/user/footter.php';
+        include '../Front-end/view/user/footter_link.php';
     }
 }
 
@@ -69,11 +62,11 @@ class introduceController
 {
     public function introduce()
     {
-        include './views/user/header_link.php';
-        include_once './views/user/header.php';
-        require_once './views/user/introduce.php';
-        include_once './views/user/footter.php';
-        include './views/user/footter_link.php';
+        include '../Front-end/view/user/header_link.php';
+        include_once '../Front-end/view/user/header.php';
+        require_once '../Front-end/view/user/introduce.php';
+        include_once '../Front-end/view/user/footter.php';
+        include '../Front-end/view/user/footter_link.php';
     }
 }
 
@@ -82,11 +75,11 @@ class contactController
 {
     public function contact()
     {
-        include './views/user/header_link.php';
-        include_once './views/user/header.php';
-        require_once './views/user/contact.php';
-        include_once './views/user/footter.php';
-        include './views/user/footter_link.php';
+        include '../Front-end/view/user/header_link.php';
+        include_once '../Front-end/view/user/header.php';
+        require_once '../Front-end/view/user/contact.php';
+        include_once '../Front-end/view/user/footter.php';
+        include '../Front-end/view/user/footter_link.php';
     }
 }
 //san pham yeu thich
@@ -94,24 +87,35 @@ class favouriteController
 {
     public function favourite()
     {
-        include './views/user/header_link.php';
-        include_once './views/user/header.php';
-        require_once './views/user/favourite.php';
-        include_once './views/user/footter.php';
-        include './views/user/footter_link.php';
+        include '../Front-end/view/user/header_link.php';
+        include_once '../Front-end/view/user/header.php';
+        require_once '../Front-end/view/user/favourite.php';
+        include_once '../Front-end/view/user/footter.php';
+        include '../Front-end/view/user/footter_link.php';
     }
 }
 //gio hang
+class cartController
+{
+    public function cart()
+    {
+        include '../Front-end/view/user/header_link.php';
+        include_once '../Front-end/view/user/header.php';
+        require_once '../Front-end/view/user/cart.php';
+        include_once '../Front-end/view/user/footter.php';
+        include '../Front-end/view/user/footter_link.php';
+    }
+}
 //tai khoan
 class accountController
 {
     public function account()
     {
-        include './views/user/header_link.php';
-        include_once './views/user/header.php';
-        require_once './views/user/account.php';
-        include_once './views/user/footter.php';
-        include './views/user/footter_link.php';
+        include '../Front-end/view/user/header_link.php';
+        include_once '../Front-end/view/user/header.php';
+        require_once '../Front-end/view/user/account.php';
+        include_once '../Front-end/view/user/footter.php';
+        include '../Front-end/view/user/footter_link.php';
     }
 }
 
@@ -120,16 +124,16 @@ class loginController
 {
     public function login()
     {
-        include './views/user/header_link.php';
-        require_once './views/user/login.php';
-        include './views/user/footter_link.php';
+        include '../Front-end/view/user/header_link.php';
+        require_once '../Front-end/view/user/login.php';
+        include '../Front-end/view/user/footter_link.php';
     }
 
     public function register()
     {
-        include './views/user/header_link.php';
-        require_once './views/user/register.php';
-        include './views/user/footter_link.php';
+        include '../Front-end/view/user/header_link.php';
+        require_once '../Front-end/view/user/register.php';
+        include '../Front-end/view/user/footter_link.php';
     }
 }
 
@@ -138,11 +142,11 @@ class guaranteeController
 {
     public function guarantee()
     {
-        include './views/user/header_link.php';
-        include_once './views/user/header.php';
-        require_once './views/user/bao_hanh.php';
-        include_once './views/user/footter.php';
-        include './views/user/footter_link.php';
+        include '../Front-end/view/user/header_link.php';
+        include_once '../Front-end/view/user/header.php';
+        require_once '../Front-end/view/user/bao_hanh.php';
+        include_once '../Front-end/view/user/footter.php';
+        include '../Front-end/view/user/footter_link.php';
     }
 }
 
@@ -151,11 +155,11 @@ class clauseController
 {
     public function clause()
     {
-        include './views/user/header_link.php';
-        include_once './views/user/header.php';
-        require_once './views/user/dieu_khoan.php';
-        include_once './views/user/footter.php';
-        include './views/user/footter_link.php';
+        include '../Front-end/view/user/header_link.php';
+        include_once '../Front-end/view/user/header.php';
+        require_once '../Front-end/view/user/dieu_khoan.php';
+        include_once '../Front-end/view/user/footter.php';
+        include '../Front-end/view/user/footter_link.php';
     }
 }
 
@@ -164,11 +168,11 @@ class refundController
 {
     public function refund()
     {
-        include './views/user/header_link.php';
-        include_once './views/user/header.php';
-        require_once './views/user/hoan_tien.php';
-        include_once './views/user/footter.php';
-        include './views/user/footter_link.php';
+        include '../Front-end/view/user/header_link.php';
+        include_once '../Front-end/view/user/header.php';
+        require_once '../Front-end/view/user/hoan_tien.php';
+        include_once '../Front-end/view/user/footter.php';
+        include '../Front-end/view/user/footter_link.php';
     }
 }
 
@@ -177,11 +181,11 @@ class compareController
 {
     public function compare()
     {
-        include './views/user/header_link.php';
-        include_once './views/user/header.php';
-        require_once './views/user/compare.php';
-        include_once './views/user/footter.php';
-        include './views/user/footter_link.php';
+        include '../Front-end/view/user/header_link.php';
+        include_once '../Front-end/view/user/header.php';
+        require_once '../Front-end/view/user/compare.php';
+        include_once '../Front-end/view/user/footter.php';
+        include '../Front-end/view/user/footter_link.php';
     }
 }
 
@@ -190,10 +194,10 @@ class discoundController
 {
     public function discound()
     {
-        include './views/user/header_link.php';
-        include_once './views/user/header.php';
-        require_once './views/user/discound.php';
-        include_once './views/user/footter.php';
-        include './views/user/footter_link.php';
+        include '../Front-end/view/user/header_link.php';
+        include_once '../Front-end/view/user/header.php';
+        require_once '../Front-end/view/user/discound.php';
+        include_once '../Front-end/view/user/footter.php';
+        include '../Front-end/view/user/footter_link.php';
     }
 }

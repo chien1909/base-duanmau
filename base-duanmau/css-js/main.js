@@ -418,6 +418,7 @@ try {
   console.error("❌ Lỗi rating:", err);
 }
 
+// COPY MA
 try {
   const toastEl = document.getElementById("copyToast");
   const toast = new bootstrap.Toast(toastEl, { delay: 2000 });
@@ -439,43 +440,3 @@ try {
 } catch (error) {
   console.log("Lỗi copy:", error);
 }
-
-//Button thêm giỏ hàng
-document.getElementById("addToCartBtn").addEventListener("click", function () {
-  // Lấy thông tin sản phẩm từ các element trên trang
-  // Anh cần đảm bảo có các element chứa thông tin này, ví dụ:
-  const productId = 123; // Cần lấy ID sản phẩm thực tế
-  const variantId = 456; // Cần lấy ID biến thể được chọn (màu sắc, dung lượng)
-  const quantity = parseInt(document.getElementById("quantity").value);
-
-  // Tạo đối tượng FormData để gửi dữ liệu
-  const formData = new FormData();
-  formData.append("product_id", productId);
-  formData.append("variant_id", variantId);
-  formData.append("quantity", quantity);
-
-  // Gọi backend bằng Fetch API
-  fetch("index.php?ctl=cart&act=addToCart", {
-    // Sửa đường dẫn này cho đúng với router của anh
-    method: "POST",
-    body: formData,
-  })
-    .then((response) => response.json())
-    .then((data) => {
-      if (data.status === "success") {
-        // Hiển thị thông báo thành công (dùng modal hoặc toast đã có)
-        const myModal = new bootstrap.Modal(
-          document.getElementById("addToCartModal")
-        );
-        myModal.show();
-        // Cập nhật số lượng sản phẩm trên icon giỏ hàng (nếu có)
-      } else {
-        // Hiển thị thông báo lỗi
-        alert("Lỗi: " + data.message);
-      }
-    })
-    .catch((error) => {
-      console.error("Error:", error);
-      alert("Đã có lỗi xảy ra. Vui lòng thử lại.");
-    });
-});
